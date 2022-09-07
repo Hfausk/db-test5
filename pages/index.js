@@ -1,8 +1,6 @@
 import Foods from "./displayUsers"
 
-fetch('/api/get')
-.then((response) => response.json())
-.then((data) => console.log(data))
+
 
 const Index = () => (
 

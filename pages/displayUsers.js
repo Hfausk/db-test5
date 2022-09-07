@@ -1,27 +1,23 @@
-import { PrismaClient } from "@prisma/client";
+import { useState, useEffect } from 'react'
+import UserTable from '../components/UserTable'
 
-const prisma = new PrismaClient();
+export default function display() {
 
-function displayUsers() 
+return (
+    <UserTable></UserTable>
+)
+
+
+}
 
 //unfinished code here 
 
-export async function getServerSideProps() {
-    const allUsers = await prisma.user.findMany({
-        orderBy: [
-            {
-                email: "asc",
-            },
-            {
-                name: "asc",
-            },
-        ],
-    });
-    };
 
 
 
-    
+
+
+
 
 
 
